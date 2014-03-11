@@ -1,0 +1,40 @@
+{
+    "name": "devrama-slider",
+    "title": "Devrama Image/HTML Slider",
+    "description": "'Devrama Slider' is a image slider with many features. 'Responsive', 'CSS3 Transition Ready', 'Transition Effects', 'Progress Bar', 'HTML content inside a slide', 'Advanced Preload/Lazyload', 'Single Javascript file', 'CSS Customizable', 'User defined Navigation/Control available' and 'Pause on hover'. It support both images and HTML contents.",
+    "keywords": [
+        "slider",
+	"carousel",
+	"slideshow",
+        "customizable",
+	"css3",
+	"effects",
+	"lazyload",
+	"responsive",
+	"gallery"
+    ],
+    "version": "0.9.0",
+    "author": {
+        "name": "WON JONG YOO",
+        "url": "http://devrama.com"
+    },
+    "maintainers": [
+        {
+            "name": "WON JONG YOO",
+            "url": "http://devrama.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/Devrama/Devrama-Slider/issues",
+    "homepage": "http://devrama.com/static/devrama-slider/",
+    "demo": "http://devrama.com/static/devrama-slider/",
+    "download": "http://devrama.com/static/devrama-slider/",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
+}
