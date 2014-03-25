@@ -1,5 +1,5 @@
 /**
- * DrSlider Version 0.9.0
+ * DrSlider Version 0.9.2
  * Developed by devrama.com
  * 
  * Licensed under the MIT license:
@@ -102,14 +102,14 @@
 		},
 		
 		_getEndEvent: function(prop){
-			var vendors = 'Webkit Moz Ms O Khtml'.split(' ');
+			var vendors = 'webkit Moz Ms o Khtml'.split(' ');
 			var len = vendors.length;
 			 
 			if (prop in document.body.style) return prop+'end';
 			
-			prop = prop.chartAt(0).toUppderCase() + prop.slice(1);
+			prop = prop.charAt(0).toUpperCase() + prop.slice(1);
 			for(var i =0; i<vendors.length; i++){
-				if(vendors[i]+prop in document.body.style) return vendors[i]+prop+'end';
+				if(vendors[i]+prop in document.body.style) return vendors[i]+prop+'End';
 			}
 			
 			return false;
@@ -587,8 +587,8 @@
 					'width': this.options.navigationType == 'number' ? $nav_link.innerHeight()+'px' : '13px',
 					'border': '0px solid transparent',
 					'border-radius': this.options.navigationType == 'circle' ? '50%' : '',
-					'margin-top': (pos_nav == 'in-left-middle' || pos_nav == 'in-right-middle') ? '0.4em':'',
-					'margin-left': (pos_nav != 'in-left-middle' && pos_nav != 'in-right-middle') ? '0.4em':''
+					'margin-top': (pos_nav == 'in-left-middle' || pos_nav == 'in-right-middle') ? '5px':'',
+					'margin-left': (pos_nav != 'in-left-middle' && pos_nav != 'in-right-middle') ? '5px':''
 							
 				});
 				
