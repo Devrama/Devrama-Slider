@@ -1,5 +1,5 @@
 /**
- * DrSlider Version 0.9.2
+ * DrSlider Version 0.9.3
  * Developed by devrama.com
  * 
  * Licensed under the MIT license:
@@ -64,6 +64,25 @@
 			
 			
 		};
+		
+		
+		var css = '\
+					<style id="devrama-css" type="text/css">\
+					.devrama-slider,\
+					.devrama-slider *,\
+					.devrama-slider *::before,\
+					.devrama-slider *::after{\
+					 -webkit-box-sizing: border-box;\
+					    -moz-box-sizing: border-box;\
+					         box-sizing: border-box;\
+					}\
+					</style>\
+					';
+		
+		if($('#devrama-css').length == 0){
+			if($('html>head').length > 0) $('html>head').append(css);
+			else $('body').append(css);
+		}
 		
 		$.extend(this.options, options);
 		
@@ -377,7 +396,7 @@
 					$prev_target1.animate(new_size);
 					$prev_target2.animate(new_size);
 					
-					this.$ele_in.animate(new_size);
+					this.$ele_in.css(new_size); //.animate() makes this block 'overflow: hidden', so I use just .css().
 					this.$ele_projector.animate(new_size, function(){
 						if(typeof callback == 'function') callback();
 					});
