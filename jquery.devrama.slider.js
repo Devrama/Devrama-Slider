@@ -1,5 +1,5 @@
 /**
- * DrSlider Version 0.9.3
+ * DrSlider Version 0.9.4
  * Developed by devrama.com
  * 
  * Licensed under the MIT license:
@@ -1012,7 +1012,7 @@
 				if(that.is_pause == true || that.on_transition){
 					if(elapsed_time == 0) elapsed_time = current_time - start_time;
 					
-					that.requestFrame.call(this, frame);
+					that.requestFrame.call(window, frame);
 					
 				}
 				else {
@@ -1035,7 +1035,7 @@
 						that._showProgress(percent);
 					}
 					
-					that.requestFrame.call(this, frame);
+					that.requestFrame.call(window, frame);
 				}
 				
 			};
