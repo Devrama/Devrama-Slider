@@ -1,5 +1,5 @@
 /**
- * DrSlider Version 0.9.4
+ * DrSlider Version 0.9.5
  * Developed by devrama.com
  * 
  * Licensed under the MIT license:

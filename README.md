@@ -35,7 +35,7 @@ HOW TO USE IT
 
 LICENSE
 ---------
-Copyright 2014 Devrama.com
+Copyright 2017 Devrama.com
 
 Licensed under the MIT license:
 http://www.opensource.org/licenses/mit-license.php

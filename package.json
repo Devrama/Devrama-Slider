@@ -1,0 +1,34 @@
+{
+  "name": "jquery-devrama-slider",
+  "version": "0.9.5",
+  "description": "jQuery plugin - Image/HTML slider",
+  "main": "jquery.devrama.slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devrama/Devrama-Slider.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "slider",
+    "carousel",
+    "slideshow",
+    "customizable",
+    "css3",
+    "effects",
+    "lazyload",
+    "responsive",
+    "gallery"
+  ],
+  "author": "WON JONG YOO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Devrama/Devrama-Slider/issues"
+  },
+  "homepage": "http://devrama.com/static/devrama-slider/",
+  "dependencies": {},
+  "devDependencies": {}
+}
