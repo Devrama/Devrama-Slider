@@ -988,13 +988,20 @@
 			
 		},
 		
+		_duration: function(){
+			var index = typeof this.current_slide == 'undefined' ? 0 : this.current_slide;
+			var $element = this.$sliders.eq(index);
+			var duration = $element.data('duration');
+			return typeof duration == 'number' ? duration : this.options.duration;
+		},
+		
 		_startTimer: function(callback){
 			var that = this;
 			this.play_timer = true;
 			this.active_timer = true;
 			
 			var start_time = (new Date()).getTime();
-			var end_time = start_time + that.options.duration;
+			var end_time = start_time + that._duration();
 			var elapsed_time = 0;
 			
 			this._showProgress(0);
@@ -1018,20 +1025,20 @@
 				else {
 					if(elapsed_time > 0){
 						start_time = current_time - elapsed_time;
-						end_time = start_time + that.options.duration;
+						end_time = start_time + that._duration();
 						elapsed_time = 0;
 					}
 					
 					if(current_time > end_time) {
 						that._showProgress(100);
 						start_time = (new Date()).getTime();
-						end_time = start_time + that.options.duration;
+						end_time = start_time + that._duration();
 						that._next(function(){
 							that._showProgress(0);
 						});
 					}
 					else {
-						var percent = ((current_time - start_time)/that.options.duration)*100;
+						var percent = ((current_time - start_time)/that._duration())*100;
 						that._showProgress(percent);
 					}
 					
