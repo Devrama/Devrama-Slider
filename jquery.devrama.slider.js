@@ -1234,7 +1234,7 @@
 			}
 			
 			if($element.data('lazy-background') && $element.children('.lazy-background').length == 0){
-				var html = '<img src="'+$element.data('lazy-background')+'" class="lazy-background"/>';
+				var html = '<img src="'+$element.data('lazy-background')+'" class="lazy-background" alt="'+$element.data['alt']+'"/>';
 				$(html).prependTo($element).css({
 					'position': 'absolute',
 					'top': '0',
